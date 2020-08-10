@@ -46,10 +46,68 @@ table {
   border-spacing: 0; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 100%; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
+
+body {
+  background-image: url("../images/cover10.jpg");
+  background-size: 100% auto;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px 10px 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  color: white; }
+  @media screen and (min-width: 600px) {
+    .navbar {
+      justify-content: space-between; } }
+  @media screen and (min-width: 600px) {
+    .navbar {
+      padding: 10px 40px 10px 30px; } }
+  .navbar > * {
+    margin: 10px 0; }
+    @media screen and (min-width: 600px) {
+      .navbar > * {
+        margin: 4px 0; } }
+  .navbar .logotext {
+    background-color: black;
+    padding: 14px 8px;
+    display: none;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    border-radius: 4px; }
+    @media screen and (min-width: 600px) {
+      .navbar .logotext {
+        display: block; } }
+    .navbar .logotext .logotext-first {
+      color: orange;
+      font-weight: 700; }
+    .navbar .logotext .logotext-second {
+      color: white;
+      font-weight: 700; }
+  .navbar .nav-links {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px; }
+    .navbar .nav-links > *:not(:last-child) {
+      margin-right: 2rem; }
+    .navbar .nav-links > *:hover {
+      border-bottom: 2px solid orange;
+      margin-bottom: -8px;
+      cursor: pointer; }
 
 /*
 Start watching for compiling scss to css

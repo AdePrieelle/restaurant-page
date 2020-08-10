@@ -1,13 +1,85 @@
 @import 'partials/reset';
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100%;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+body {
+	background-image: url("../images/cover10.jpg");
+	// background-size: contain;
+	background-size: 100% auto;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+}
+
+#content {
+	// width: 100%;
+	// height: 100%;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@media screen and (min-width: 600px) {
+		justify-content: space-between;
+	}
+	padding: 10px 40px 10px 40px;
+	@media screen and (min-width: 600px) {
+		padding: 10px 40px 10px 30px;
+	}
+	background-color: rgba(0,0,0,.4);
+	font-size: 16px;
+	color: white;
+	> * {
+		margin: 10px 0;
+		@media screen and (min-width: 600px) {
+			margin: 4px 0;
+		}
+	}
+	.logotext {
+		background-color: black;
+		padding: 14px 8px;
+		display: none;
+		font-size: 1rem;
+		font-family: 'Open Sans', sans-serif;
+		cursor: pointer;
+		border-radius: 4px;
+		@media screen and (min-width: 600px) {
+			display: block;
+		}
+		.logotext-first {
+			color: orange;
+			font-weight: 700;
+		}
+		.logotext-second {
+			color: white;
+			font-weight: 700;
+		}
+	}
+	.nav-links {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		> *:not(:last-child) {
+			margin-right: 2rem;
+		}
+		> *:hover {
+			border-bottom: 2px solid orange;
+			margin-bottom: -8px;
+			cursor: pointer;
+		}
+	}
+}
 
 
 /*
