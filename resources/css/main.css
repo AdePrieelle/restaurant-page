@@ -58,7 +58,8 @@ body {
   height: 100%;
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .navbar {
   display: flex;
@@ -100,14 +101,48 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px; }
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif; }
+    .navbar .nav-links > * > * {
+      text-decoration: none;
+      color: white; }
     .navbar .nav-links > *:not(:last-child) {
       margin-right: 2rem; }
     .navbar .nav-links > *:hover {
       border-bottom: 2px solid orange;
       margin-bottom: -8px;
       cursor: pointer; }
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 100px;
+  margin-bottom: 40px; }
+  .main-wrapper .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    color: black;
+    text-align: center; }
+    .main-wrapper .main .main-title {
+      font-size: 3rem;
+      padding: 20px;
+      margin-bottom: 40px;
+      font-family: 'Dancing Script', cursive;
+      font-weight: 700;
+      color: #353535; }
+    .main-wrapper .main .main-intro {
+      font-size: 1.8rem;
+      font-family: 'Dancing Script', cursive;
+      font-weight: 100;
+      padding: 20px;
+      color: #353535; }
 
 /*
 Start watching for compiling scss to css
