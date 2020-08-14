@@ -275,6 +275,106 @@ body {
 	}
 }
 
+// Contact
+
+.main-wrapper-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 100px;
+	margin-bottom: 40px;
+	.main-contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(255, 255, 255, 0.9);
+		padding: 20px 30px;
+		color: rgb(0, 0, 0);
+		text-align: center;
+		.main-contact-title {
+			font-size: 3rem;
+			padding: 20px;
+			margin-bottom: 30px;
+			font-family: 'Dancing Script', cursive;
+			font-weight: 700;
+			color: rgb(53, 53, 53);
+		}
+		.main-contact-information-wrapper {
+				text-align: left;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 600;
+				color: rgb(53, 53, 53);
+				.main-contact-location {
+					margin-bottom: 1.5rem;
+					display: flex;
+					.main-contact-location-icon {
+						font-size: 1.5rem;
+						margin-right: 20px;
+						color: orange;
+					}
+					.main-contact-location-address {
+						display: flex;
+						flex-direction: column;
+						text-align: left;
+						font-size: 1rem;
+						font-family: 'Open Sans', sans-serif;
+						font-weight: 600;
+						color: rgb(53, 53, 53);
+						> * {
+							margin-bottom: 6px;
+						}
+					}
+				}
+				.main-contact-opening-hours {
+					display: flex;
+					margin-bottom: 1.5rem;
+					.main-contact-opening-hours-icon {
+						font-size: 1.2rem;
+						margin-right: 20px;
+						color: orange;
+					}
+					.main-contact-opening-hours-days {
+						text-align: left;
+						.main-contact-opening-hours-day {
+							display: flex;
+							justify-content: space-between;
+							.main-contact-opening-hours-day-sun-thu,
+							.main-contact-opening-hours-day-fri-sat {
+								color: orange;
+								margin-bottom: .8rem;
+								margin-right: .8rem;
+							}
+						}
+					}
+				}
+				.main-contact-telephone {
+					display: flex;
+					margin-bottom: 1.8rem;
+					.main-contact-telephone-icon {
+						font-size: 1.2rem;
+						margin-right: 20px;
+						color: orange;
+					}
+				}
+				.main-contact-mail {
+					display: flex;
+					margin-bottom: 1.5rem;
+					.main-contact-mail-icon {
+						font-size: 1.2rem;
+						margin-right: 20px;
+						color: orange;
+					}
+				}
+		}
+	}
+}
+
+
+
 
 
 /*

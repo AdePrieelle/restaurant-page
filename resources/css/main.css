@@ -260,6 +260,85 @@ body {
             word-wrap: break-word;
             width: 150px; }
 
+.main-wrapper-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 100px;
+  margin-bottom: 40px; }
+  .main-wrapper-contact .main-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    color: black;
+    text-align: center; }
+    .main-wrapper-contact .main-contact .main-contact-title {
+      font-size: 3rem;
+      padding: 20px;
+      margin-bottom: 30px;
+      font-family: 'Dancing Script', cursive;
+      font-weight: 700;
+      color: #353535; }
+    .main-wrapper-contact .main-contact .main-contact-information-wrapper {
+      text-align: left;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      color: #353535; }
+      .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-location {
+        margin-bottom: 1.5rem;
+        display: flex; }
+        .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-location .main-contact-location-icon {
+          font-size: 1.5rem;
+          margin-right: 20px;
+          color: orange; }
+        .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-location .main-contact-location-address {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          font-size: 1rem;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600;
+          color: #353535; }
+          .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-location .main-contact-location-address > * {
+            margin-bottom: 6px; }
+      .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-opening-hours {
+        display: flex;
+        margin-bottom: 1.5rem; }
+        .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-opening-hours .main-contact-opening-hours-icon {
+          font-size: 1.2rem;
+          margin-right: 20px;
+          color: orange; }
+        .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-opening-hours .main-contact-opening-hours-days {
+          text-align: left; }
+          .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-opening-hours .main-contact-opening-hours-days .main-contact-opening-hours-day {
+            display: flex;
+            justify-content: space-between; }
+            .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-opening-hours .main-contact-opening-hours-days .main-contact-opening-hours-day .main-contact-opening-hours-day-sun-thu,
+            .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-opening-hours .main-contact-opening-hours-days .main-contact-opening-hours-day .main-contact-opening-hours-day-fri-sat {
+              color: orange;
+              margin-bottom: .8rem;
+              margin-right: .8rem; }
+      .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-telephone {
+        display: flex;
+        margin-bottom: 1.8rem; }
+        .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-telephone .main-contact-telephone-icon {
+          font-size: 1.2rem;
+          margin-right: 20px;
+          color: orange; }
+      .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-mail {
+        display: flex;
+        margin-bottom: 1.5rem; }
+        .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-mail .main-contact-mail-icon {
+          font-size: 1.2rem;
+          margin-right: 20px;
+          color: orange; }
+
 /*
 Start watching for compiling scss to css
 sass --watch main.scss:main.css
