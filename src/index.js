@@ -1,13 +1,15 @@
 import {renderNavbar} from "./navbar.js";
-import {renderHomepage} from "./homepage";
+import {renderHomepage} from "./homepage.js";
+import {renderMenu} from "./menu.js";
 
 // initial homepage
 renderNavbar();
 renderHomepage();
 
 // selectors
-const logotext = document.querySelector(".logotext");
 const home = document.querySelector(".home");
+const logotext = document.querySelector(".logotext");
+const menu = document.querySelector(".menu");
 
 // clear out content when switching tabs
 function cleanTab() {
@@ -16,16 +18,32 @@ function cleanTab() {
 }
 
 // display tab content
-logotext.addEventListener("click", function() {
-  cleanTab();
-  renderHomepage();
-});
-
 home.addEventListener("click", function() {
   cleanTab();
   renderHomepage();
+  addClickOurMenuButtonEvent();
 });
 
+logotext.addEventListener("click", function() {
+  cleanTab();
+  renderHomepage();
+  addClickOurMenuButtonEvent();
+});
+
+menu.addEventListener("click", function() {
+  cleanTab();
+  renderMenu();
+});
+
+function addClickOurMenuButtonEvent() {
+  const mainButtonMenu = document.querySelector(".main-button-menu");
+  mainButtonMenu.addEventListener("click", function() {
+    cleanTab();
+    renderMenu();
+  });
+}
+
+addClickOurMenuButtonEvent();
 
 
 /*

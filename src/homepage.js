@@ -51,9 +51,11 @@ const renderHomepage = (() => {
   mainLocation.appendChild(mainLocationAddress);
 
   let mainLocationAddressText = document.createTextNode("Test Street 11, Examplecity, 1234 AB");
-  mainLocationAddress.appendChild(mainLocationAddressText)
+  mainLocationAddress.appendChild(mainLocationAddressText);
 
 });
+
+
 
 export {renderHomepage};
 
