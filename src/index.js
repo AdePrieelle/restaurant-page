@@ -1,15 +1,46 @@
 import {renderNavbar} from "./navbar.js";
 import {renderHomepage} from "./homepage.js";
 import {renderMenu} from "./menu.js";
+import {renderContact} from "./contact.js";
 
-// initial homepage
+// initial homepage render
 renderNavbar();
 renderHomepage();
+addClickOurMenuButtonRender();
+addClickMainLocationContactRender();
 
 // selectors
 const home = document.querySelector(".home");
 const logotext = document.querySelector(".logotext");
 const menu = document.querySelector(".menu");
+const contact = document.querySelector(".contact");
+
+// display homepage content
+home.addEventListener("click", function() {
+  cleanTab();
+  renderHomepage();
+  addClickOurMenuButtonRender();
+  addClickMainLocationContactRender();
+});
+
+logotext.addEventListener("click", function() {
+  cleanTab();
+  renderHomepage();
+  addClickOurMenuButtonRender();
+  addClickMainLocationContactRender();
+});
+
+// display menu content
+menu.addEventListener("click", function() {
+  cleanTab();
+  renderMenu();
+});
+
+// display contact content
+contact.addEventListener("click", function() {
+  cleanTab();
+  renderContact();
+});
 
 // clear out content when switching tabs
 function cleanTab() {
@@ -17,25 +48,8 @@ function cleanTab() {
   content.removeChild(content.lastChild);
 }
 
-// display tab content
-home.addEventListener("click", function() {
-  cleanTab();
-  renderHomepage();
-  addClickOurMenuButtonEvent();
-});
-
-logotext.addEventListener("click", function() {
-  cleanTab();
-  renderHomepage();
-  addClickOurMenuButtonEvent();
-});
-
-menu.addEventListener("click", function() {
-  cleanTab();
-  renderMenu();
-});
-
-function addClickOurMenuButtonEvent() {
+// display Menu tab when clicking on Our Menu at the homepage
+function addClickOurMenuButtonRender() {
   const mainButtonMenu = document.querySelector(".main-button-menu");
   mainButtonMenu.addEventListener("click", function() {
     cleanTab();
@@ -43,7 +57,15 @@ function addClickOurMenuButtonEvent() {
   });
 }
 
-addClickOurMenuButtonEvent();
+// display Contact tab when clicking on the location at the homepage
+function addClickMainLocationContactRender() {
+  const mainLocation = document.querySelector(".main-location");
+  mainLocation.addEventListener("click", function() {
+    cleanTab();
+    renderContact();
+  });
+}
+
 
 
 /*

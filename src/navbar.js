@@ -22,7 +22,7 @@ const renderNavbar = (() => {
   spanLogotextSecond.classList = "logotext-second";
   logotext.appendChild(spanLogotextSecond);
 
-  let spanLogotextSecondText = document.createTextNode("Fresh");
+  let spanLogotextSecondText = document.createTextNode("Foody");
   spanLogotextSecond.appendChild(spanLogotextSecondText);
 
   // Links

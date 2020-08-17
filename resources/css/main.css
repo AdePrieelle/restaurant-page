@@ -62,6 +62,10 @@ body {
   background-attachment: fixed; }
 
 .navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,7 +125,8 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 100px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding-top: 72px; }
   .main-wrapper .main {
     display: flex;
     flex-direction: column;
@@ -150,7 +155,9 @@ body {
       cursor: pointer;
       transition: all .5s; }
       .main-wrapper .main .main-button-menu:hover {
-        transform: scale(1.2); }
+        transform: scale(1.2);
+        padding-top: 20px;
+        padding-bottom: 90px; }
     .main-wrapper .main .main-intro {
       font-size: 1.8rem;
       font-family: 'Dancing Script', cursive;
@@ -169,7 +176,11 @@ body {
       background-color: rgba(0, 0, 0, 0.8);
       color: white;
       text-align: left;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all .375s; }
+      .main-wrapper .main .main-location:hover {
+        transform: scale(1.05);
+        background-color: rgba(0, 0, 0, 0.9); }
       .main-wrapper .main .main-location i {
         font-size: 1.5rem;
         margin-right: 20px;
@@ -183,7 +194,8 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 100px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding-top: 72px; }
   .main-wrapper-menu .main-menu {
     display: flex;
     flex-direction: column;
@@ -268,7 +280,8 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 100px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding-top: 72px; }
   .main-wrapper-contact .main-contact {
     display: flex;
     flex-direction: column;
@@ -319,8 +332,8 @@ body {
           .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-opening-hours .main-contact-opening-hours-days .main-contact-opening-hours-day {
             display: flex;
             justify-content: space-between; }
-            .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-opening-hours .main-contact-opening-hours-days .main-contact-opening-hours-day .main-contact-opening-hours-day-sun-thu,
-            .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-opening-hours .main-contact-opening-hours-days .main-contact-opening-hours-day .main-contact-opening-hours-day-fri-sat {
+            .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-opening-hours .main-contact-opening-hours-days .main-contact-opening-hours-day .main-contact-opening-hours-day-mon-thu,
+            .main-wrapper-contact .main-contact .main-contact-information-wrapper .main-contact-opening-hours .main-contact-opening-hours-days .main-contact-opening-hours-day .main-contact-opening-hours-day-fri-sun {
               color: orange;
               margin-bottom: .8rem;
               margin-right: .8rem; }
